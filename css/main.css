@@ -135,6 +135,7 @@ a{
     
 .nav{
     
+}    
 .main{
 	-webkit-flex: 2 1 auto;
             flex: 2 1 auto;
@@ -144,7 +145,7 @@ a{
             flex: 1 1 0;
 }
 }
-}
+
 
 /***********************************
 					Masthead
