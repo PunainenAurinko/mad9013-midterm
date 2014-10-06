@@ -1,24 +1,25 @@
 @charset "utf-8";
+
 /* CSS Document */
 
-
 *{
-	padding:0;
-	margin:0;
+	padding: 0;
+	margin: 0;
 }	
 body{
 	font-size: 62.5%;	
   /** you can set this as 100% if you want **/
-	background-color: #666;
+	background-color: #fff;
 }
 h1, h2, h3{
 	font-weight: 700;	
 	padding: 10px 20px;
-	color: #000;
+	color: #6199c0;
 }
 h1{
 	font-size: 3.6rem;	
 	font-family: montez, cursive;
+    text-shadow: 1px 1px 1px rgba(150, 150, 150, 0.5);
 }
 h2{
 	font-size: 3.0rem;	
@@ -27,12 +28,12 @@ h2{
 h3{
 	font-size: 2.4rem;
 	font-family: vidaloka, serif;
-	color: #494949;	
+	color: #466f8a;	
 }
 p, li, a{
 	font-weight: 400;
 	font-family: pontano-sans, sans-serif;
-	color: #555;		
+	color: #343b40;		
 }
 p{
 	padding: 10px 20px;
@@ -41,43 +42,116 @@ p{
 li{
 	font-size: 1.4rem;
 }
-ol li{
-	padding: 6px 20px;
-	margin-left: 20px;
-	list-style-position:inside;
-}
+
 a{
 	font-size: 1.4rem;
-}	
+}
 
 /***********************************
 					Layout
 ***********************************/
+
+@media all and (min-width: 1081px) {
+
 .wrapper{
-	background-color: #fff;	
+    display: -webkit-flex;
+    display:         flex;
+    -webkit-flex-flow: row;
+            flex-flow: row;
 }
-.masthead{
-	
-}
-.nav{
-	
-}
-.navbar{
-	
+    
+ .nav{
+    padding-left: 20px;
+    -webkit-flex: 1 1 0;
+            flex: 1 1 0;
 }
 .main{
-	
+	-webkit-flex: 2 1 0;
+            flex: 2 1 0;
 }
-.sidebar{
-	
+.two, .three {
+	-webkit-flex: 1 1 0;
+            flex: 1 1 0;
 }
-.footer{
-	
 }
+
+@media all and (max-width: 1080px) and (min-width: 720px) {
+
+.wrapper{
+    display: -webkit-flex;
+    display:         flex;
+    -webkit-flex-flow: row wrap;
+            flex-flow: row wrap;
+}
+    
+.nav{
+    padding-left: 20px;
+    -webkit-flex: 1 1 100%;
+            flex: 1 1 100%;
+     
+}
+.main{
+	-webkit-flex: 2 1 0;
+            flex: 2 1 0;
+}
+.two, .three {
+	-webkit-flex: 1 1 0;
+            flex: 1 1 0;
+}
+}
+
+@media all and (max-width: 719px) and (min-width: 500px) {
+
+.wrapper{
+    display: -webkit-flex;
+    display:         flex;
+    -webkit-flex-flow: row wrap;
+            flex-flow: row wrap;
+}
+    
+.nav{
+    padding-left: 10px;
+    -webkit-flex: 1 1 100%;
+            flex: 1 1 100%;
+}
+.main{
+	-webkit-flex: 2 1 auto;
+            flex: 2 1 auto;
+}
+.two, .three {
+	-webkit-flex: 1 1 0;
+            flex: 1 1 0;
+}
+}
+
+@media all and (max-width: 499px) {
+
+.wrapper{
+    display: -webkit-flex;
+    display:         flex;
+    -webkit-flex-flow: column;
+            flex-flow: column;
+}
+    
+.nav{
+    
+.main{
+	-webkit-flex: 2 1 auto;
+            flex: 2 1 auto;
+}
+.two, .three {
+	-webkit-flex: 1 1 0;
+            flex: 1 1 0;
+}
+}
+}
+
 /***********************************
 					Masthead
 ***********************************/
+
 .masthead h1{
+    display: block;
 	padding: 30px 20px;
 }
 
@@ -86,41 +160,49 @@ a{
 ***********************************/
 
 .navbar li{
-	float:left;	
+    float: left;
 	width: 240px;  /* 960/4 = 240  works if the layout is 960*/
-	list-style:none;
+	list-style: none;
 }
 .navbar a{
 	display: block;	
 	padding: 8px 16px;
 	text-align: center;
 	text-decoration: none;
-	color: #333;
-	background-color: #e4e4e4;
+	color: #bcd6e8;
+	background-color: #466f8a;
 }
 .navbar a:visited,
 .navbar a:hover,
 .navbar a:active,
 .navbar a:focus{
 	color: #fff;
-	background-color: #333;
+	background-color: #343b40;
 }
 
 /***********************************
 					Content
 ***********************************/
-.sidebar p{
-	font-size: 1.4rem;	
+
+.main{
+	
 }
-.instructions{
-	color: #C30;	
+.two{
+	
 }
+.three{
+	
+}
+
+
 /***********************************
 					Footer
 ***********************************/
+
 .footer p{
-	padding: 20px 20px;
+    display: block;
+    padding: 20px 20px;
 	font-size: 1.2rem;
-	color: #999;	
-	background-color: #e4e4e4;
+	color: #bcd6e8;	
+	background-color: #466f8a;
 }
