@@ -1,0 +1,246 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+*{
+	padding:0;
+	margin:0;
+}	
+body{
+	font-size: 62.5%;	
+	background-color: #666;
+}
+h1, h2, h3{
+	font-weight: 700;	
+	padding: 10px 20px;
+	color: #6199c0;
+}
+h1{
+	font-size: 3.6rem;	
+	font-family: montez, cursive;
+    text-shadow: 1px 1px 1px rgba(150, 150, 150, 0.5);
+}
+h2{
+	font-size: 3.0rem;	
+	font-family: vidaloka, serif;
+}
+h3{
+	font-size: 2.4rem;
+	font-family: vidaloka, serif;
+	color: #466f8a;	
+}
+p, li, a{
+	font-weight: 400;
+	font-family: pontano-sans, sans-serif;
+	color: #343b40;			
+}
+p{
+	padding: 10px 20px;
+	font-size: 1.4rem;
+}
+li{
+	font-size: 1.4rem;
+}
+ol li{
+	padding: 6px 20px;
+	margin-left: 20px;
+	list-style-position:inside;
+}
+a{
+	font-size: 1.4rem;
+}	
+
+/***********************************
+					Layout
+***********************************/
+@media all and (min-width: 1081px) {
+
+.wrapper{
+	background-color: #fff;
+    display: block;
+}
+.masthead{
+	float: inherit;
+}
+.nav{
+	padding-left: 20px;
+    float: left;
+    width: 18%;
+}
+.navbar{
+	
+}
+.main{
+	float: left;
+    width: 40%;
+}
+.two{
+	float: left;
+    width: 20%;
+}
+.three{
+	float: right;
+    width: 20%;
+}
+.footer{
+	clear: both;
+}
+}
+
+@media all and (max-width: 1080px) and (min-width: 720px) {
+
+.wrapper{
+	background-color: #fff;
+    display: block;
+}
+.masthead{
+	float: inherit;
+}
+.nav{
+	padding-left: 20px;
+    float: left;
+    width: 100%;
+}
+.navbar{
+	
+}
+.main{
+	float: left;
+    width: 50%;
+}
+.two{
+	float: left;
+    width: 25%;
+}
+.three{
+	float: right;
+    width: 25%;
+}
+.footer{
+	clear: both;
+}
+}
+
+@media all and (max-width: 719px) and (min-width: 500px) {
+
+.wrapper{
+	background-color: #fff;
+    display: block;
+}
+.masthead{
+	float: inherit;
+}
+.nav{
+	padding-left: 20px;
+    float: left;
+    width: 100%;
+}
+.navbar{
+	
+}
+.main{
+	float: left;
+    width: 100%;
+}
+.two{
+	float: left;
+    width: 50%;
+}
+.three{
+	float: right;
+    width: 50%;
+}
+.footer{
+	clear: both;
+}
+}
+
+@media all and (max-width: 499px) {
+
+.wrapper{
+	background-color: #fff;
+    display: block;
+}
+.masthead{
+	float: inherit;
+}
+.nav{
+	padding-left: 20px;
+    float: left;
+    width: 100%;
+}
+.navbar{
+	
+}
+.main{
+	float: left;
+    width: 100%;
+}
+.two{
+	float: left;
+    width: 100%;
+}
+.three{
+	float: right;
+    width: 100%;
+}
+.footer{
+	clear: both;
+}
+}
+/***********************************
+					Masthead
+***********************************/
+.masthead h1{
+	padding: 30px 20px;
+}
+
+/***********************************
+					Navigation
+***********************************/
+
+.navbar li{
+	float:left;	
+	width: 240px;  /* 960/4 = 240  works if the layout is 960*/
+	list-style:none;
+}
+.navbar a{
+	display: block;	
+	padding: 8px 16px;
+	text-align: center;
+	text-decoration: none;
+	color: #bcd6e8;
+	background-color: #466f8a;
+}
+.navbar a:visited,
+.navbar a:hover,
+.navbar a:active,
+.navbar a:focus{
+	color: #fff;
+	background-color: #343b40;
+}
+
+/***********************************
+					Content
+***********************************/
+
+.main{
+	
+}
+.two{
+	
+}
+.three{
+	
+}
+
+/***********************************
+					Footer
+***********************************/
+.footer p{
+	padding: 20px 20px;
+	font-size: 1.2rem;
+	color: #bcd6e8;	
+	background-color: #466f8a;
+}
+
