@@ -1,14 +1,13 @@
 @charset "utf-8";
 /* CSS Document */
 
-
 *{
 	padding:0;
 	margin:0;
 }	
 body{
 	font-size: 62.5%;	
-	background-color: #666;
+	background-color: #fff;
 }
 h1, h2, h3{
 	font-weight: 700;	
@@ -41,170 +40,76 @@ p{
 li{
 	font-size: 1.4rem;
 }
-ol li{
-	padding: 6px 20px;
-	margin-left: 20px;
-	list-style-position:inside;
+
+/***********************************
+					Masthead
+***********************************/
+
+.masthead h1{
+	padding: 30px 20px;
 }
-a{
-	font-size: 1.4rem;
-}	
 
 /***********************************
 					Layout
 ***********************************/
+
 @media all and (min-width: 1081px) {
 
-.wrapper{
-	background-color: #fff;
-    display: block;
-}
-.masthead{
-	float: inherit;
-}
-.nav{
-	padding-left: 20px;
-    float: left;
-    width: 18%;
-}
-.navbar{
-	
-}
-.main{
-	float: left;
-    width: 40%;
-}
-.two{
-	float: left;
-    width: 20%;
-}
-.three{
-	float: right;
-    width: 20%;
-}
-.footer{
-	clear: both;
-}
+    .main {
+        float: left;
+        width: 40%;
+    }
+    .two, .three{
+        float: left;
+        width: 20%;
+    }
 }
 
 @media all and (max-width: 1080px) and (min-width: 720px) {
 
-.wrapper{
-	background-color: #fff;
-    display: block;
-}
-.masthead{
-	float: inherit;
-}
-.nav{
-	padding-left: 20px;
-    float: left;
-    width: 100%;
-}
-.navbar{
-	
-}
-.main{
-	float: left;
-    width: 50%;
-}
-.two{
-	float: left;
-    width: 25%;
-}
-.three{
-	float: right;
-    width: 25%;
-}
-.footer{
-	clear: both;
-}
+    .main {
+        float: left;
+        width: 50%;
+    }
+    .two, three {
+        float: left;
+        width: 25%;
+    }
 }
 
 @media all and (max-width: 719px) and (min-width: 500px) {
 
-.wrapper{
-	background-color: #fff;
-    display: block;
-}
-.masthead{
-	float: inherit;
-}
-.nav{
-	padding-left: 20px;
-    float: left;
-    width: 100%;
-}
-.navbar{
-	
-}
-.main{
-	float: left;
-    width: 100%;
-}
-.two{
-	float: left;
-    width: 50%;
-}
-.three{
-	float: right;
-    width: 50%;
-}
-.footer{
-	clear: both;
-}
+    .main {
+        float: left;
+        width: 100%;
+    }
+    .two, .three {
+        float: left;
+        width: 50%;
+    }
 }
 
 @media all and (max-width: 499px) {
 
-.wrapper{
-	background-color: #fff;
-    display: block;
-}
-.masthead{
-	float: inherit;
-}
-.nav{
-	padding-left: 20px;
-    float: left;
-    width: 100%;
-}
-.navbar{
-	
-}
-.main{
-	float: left;
-    width: 100%;
-}
-.two{
-	float: left;
-    width: 100%;
-}
-.three{
-	float: right;
-    width: 100%;
-}
-.footer{
-	clear: both;
-}
-}
-/***********************************
-					Masthead
-***********************************/
-.masthead h1{
-	padding: 30px 20px;
+    .main {
+        float: left;
+        width: 100%;
+    }
+    .two, .three {
+        float: left;
+        width: 100%;
+    }
 }
 
 /***********************************
 					Navigation
 ***********************************/
 
-.navbar li{
-	float:left;	
-	width: 240px;  /* 960/4 = 240  works if the layout is 960*/
-	list-style:none;
+.navbar li {
+	width: 100%;  /* 960/4 = 240  works if the layout is 960*/
+	list-style: none;
 }
-.navbar a{
+.navbar a {
 	display: block;	
 	padding: 8px 16px;
 	text-align: center;
@@ -215,23 +120,37 @@ a{
 .navbar a:visited,
 .navbar a:hover,
 .navbar a:active,
-.navbar a:focus{
+.navbar a:focus {
 	color: #fff;
 	background-color: #343b40;
 }
 
-/***********************************
-					Content
-***********************************/
+@media screen and (min-width:500px) {
+    
+    .navbar li {
+        width: 50%;
+        float: left;
+    }
+}
 
-.main{
-	
+@media screen and (min-width:720px) {
+    
+    .navbar li {
+        width: 25%;  
+    }
 }
-.two{
-	
-}
-.three{
-	
+
+@media screen and (min-width:1080px){
+    
+    .navbar li {
+        width: 100%;
+        
+    }
+    
+    .nav {
+	float: left;
+    width: 20%;
+    }
 }
 
 /***********************************
@@ -244,3 +163,6 @@ a{
 	background-color: #466f8a;
 }
 
+.footer {
+	clear: both;
+}
