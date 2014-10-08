@@ -29,16 +29,13 @@ h3{
 	color: #466f8a;	
 }
 p, li, a{
+    font-size: 1.4rem;
 	font-weight: 400;
 	font-family: pontano-sans, sans-serif;
 	color: #343b40;			
 }
 p{
 	padding: 10px 20px;
-	font-size: 1.4rem;
-}
-li{
-	font-size: 1.4rem;
 }
 
 /***********************************
@@ -49,8 +46,60 @@ li{
 	padding: 30px 20px;
 }
 
+
 /***********************************
-					Layout
+					Navigation
+***********************************/
+
+.navbar li {
+	list-style: none;
+}
+.navbar a {
+	display: block;	
+	padding: 8px 16px;
+	text-align: center;
+	text-decoration: none;
+	color: #bcd6e8;
+	background-color: #466f8a;
+}
+.navbar a:visited,
+.navbar a:hover,
+.navbar a:active,
+.navbar a:focus {
+	color: #fff;
+	background-color: #343b40;
+}
+
+@media screen and (min-width:500px) {
+    
+    .navbar li {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media screen and (min-width:720px) {
+    
+    .navbar li {
+        width: 25%;  
+    }
+}
+
+@media screen and (min-width:1080px){
+    
+    .navbar li {
+        width: 100%;
+        
+    }
+    
+    .nav {
+	float: left;
+    width: 20%;
+    }
+}
+
+/***********************************
+					Content Layout
 ***********************************/
 
 @media all and (min-width: 1081px) {
@@ -98,58 +147,6 @@ li{
     .two, .three {
         float: left;
         width: 100%;
-    }
-}
-
-/***********************************
-					Navigation
-***********************************/
-
-.navbar li {
-	width: 100%;  /* 960/4 = 240  works if the layout is 960*/
-	list-style: none;
-}
-.navbar a {
-	display: block;	
-	padding: 8px 16px;
-	text-align: center;
-	text-decoration: none;
-	color: #bcd6e8;
-	background-color: #466f8a;
-}
-.navbar a:visited,
-.navbar a:hover,
-.navbar a:active,
-.navbar a:focus {
-	color: #fff;
-	background-color: #343b40;
-}
-
-@media screen and (min-width:500px) {
-    
-    .navbar li {
-        width: 50%;
-        float: left;
-    }
-}
-
-@media screen and (min-width:720px) {
-    
-    .navbar li {
-        width: 25%;  
-    }
-}
-
-@media screen and (min-width:1080px){
-    
-    .navbar li {
-        width: 100%;
-        
-    }
-    
-    .nav {
-	float: left;
-    width: 20%;
     }
 }
 
