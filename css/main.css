@@ -60,7 +60,7 @@ a{
             flex-flow: row;
 }
     
- .nav{
+.nav {
     -webkit-flex: 1 1 0;
             flex: 1 1 0;
 }
@@ -83,17 +83,17 @@ a{
             flex-flow: row wrap;
 }
     
-.navbar li {
-    -webkit-flex: 0 1 0;
-            flex: 0 1 0;
+.nav {
+    -webkit-flex: 12 1 auto;
+            flex: 12 1 auto;
 }
 .main{
-	-webkit-flex: 2 1 0;
-            flex: 2 1 0;
+	-webkit-flex: 1 2 auto;
+            flex: 1 2 auto;
 }
 .two, .three {
-	-webkit-flex: 1 1 0;
-            flex: 1 1 0;
+	-webkit-flex: 1 2 0;
+            flex: 1 2 0;
     }
 }
 
@@ -106,9 +106,9 @@ a{
             flex-flow: row wrap;
 }
     
-.navbar li{
-    -webkit-flex: 1 1 100%;
-            flex: 1 1 100%;
+.nav {
+    -webkit-flex: 2 1 0;
+            flex: 2 1 0;
 }
 .main{
 	-webkit-flex: 2 1 auto;
@@ -130,9 +130,10 @@ a{
 }
     
 .navbar li{
-    -webkit-flex: 1 1 100%;
-            flex: 1 1 100%;
+    -webkit-flex: 1 1 auto%;
+            flex: 1 1 auto;
 }    
+
 .main{
 	-webkit-flex: 2 1 auto;
             flex: 2 1 auto;
@@ -159,7 +160,7 @@ a{
 
 .navbar li{
     float: left;
-	width: 100%;  /* 960/4 = 240  works if the layout is 960*/
+    width: 100%;  /* 960/4 = 240  works if the layout is 960*/
 	list-style: none;
 }
 .navbar a{
