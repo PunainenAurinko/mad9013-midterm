@@ -39,7 +39,7 @@ p{
 }
 
 /***********************************
-					Masthead
+            Masthead
 ***********************************/
 
 .masthead h1{
@@ -48,7 +48,7 @@ p{
 
 
 /***********************************
-					Navigation
+            Navigation
 ***********************************/
 
 .navbar li {
@@ -85,20 +85,20 @@ p{
     }
 }
 
-@media screen and (min-width:1080px){
+@media screen and (min-width:1081px){
     
     .navbar li {
         width: 100%;
     }
     
     .nav {
-	float: left;
-    width: 20%;
+        float: left;
+        width: 20%;
     }
 }
 
 /***********************************
-					Content Layout
+            Content Layout
 ***********************************/
 
 @media all and (min-width: 1081px) {
@@ -119,7 +119,7 @@ p{
         float: left;
         width: 50%;
     }
-    .two, three {
+    .two, .three {
         float: left;
         width: 25%;
     }
@@ -137,20 +137,8 @@ p{
     }
 }
 
-@media all and (max-width: 499px) {
-
-    .main {
-        float: left;
-        width: 100%;
-    }
-    .two, .three {
-        float: left;
-        width: 100%;
-    }
-}
-
 /***********************************
-					Footer
+                Footer
 ***********************************/
 .footer p{
 	padding: 20px 20px;
