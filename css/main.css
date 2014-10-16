@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 /* CSS Document */
 
 *{
@@ -8,8 +7,7 @@
 }	
 body{
 	font-size: 62.5%;	
-  /** you can set this as 100% if you want **/
-	background-color: #fff;
+    background-color: #fff;
 }
 h1, h2, h3{
 	font-weight: 700;	
@@ -31,24 +29,89 @@ h3{
 	color: #466f8a;	
 }
 p, li, a{
+    font-size: 1.4rem;
 	font-weight: 400;
 	font-family: pontano-sans, sans-serif;
 	color: #343b40;		
 }
 p{
 	padding: 10px 20px;
-	font-size: 1.4rem;
-}
-li{
-	font-size: 1.4rem;
-}
-
-a{
-	font-size: 1.4rem;
 }
 
 /***********************************
-					Layout
+                Masthead
+***********************************/
+
+.masthead h1{
+    display: block;
+	padding: 30px 20px;
+}
+
+/***********************************
+				Navigation
+***********************************/
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar a{
+    display: block;
+    padding: 8px 16px;
+    text-align: center;
+	text-decoration: none;
+	color: #bcd6e8;
+	background-color: #466f8a;
+}
+
+.navbar a:visited,
+.navbar a:hover,
+.navbar a:active,
+.navbar a:focus{
+	color: #fff;
+	background-color: #343b40;
+}
+
+.navbar {
+    display: -webkit-flex;
+    display:         flex;
+    -webkit-flex-flow: row;
+            flex-flow: row wrap;
+}
+
+#home, #cupcakes, #cheese, #veggies {
+    flex: 1 100%;
+}
+
+@media all and (min-width: 720px) {
+
+.navbar {
+    display: -webkit-flex;
+    display:         flex;
+    -webkit-flex-flow: row;
+            flex-flow: row;
+}
+
+#home, #cupcakes, #cheese, #veggies {
+    flex: 1;
+    }
+}
+
+@media all and (min-width: 500px) and (max-width: 719px) {
+
+.navbar {
+    display: -webkit-flex;
+    display:         flex;
+    -webkit-flex-flow: row;
+            flex-flow: row wrap;
+}
+
+#home, #cupcakes, #cheese, #veggies {
+    flex: 1 50%;
+    }
+}
+/***********************************
+            Content Layout
 ***********************************/
 
 @media all and (min-width: 1081px) {
@@ -59,11 +122,6 @@ a{
     -webkit-flex-flow: row;
             flex-flow: row;
 }
-    
-.nav {
-    -webkit-flex: 1 1 0;
-            flex: 1 1 0;
-}
 .main{
 	-webkit-flex: 2 1 0;
             flex: 2 1 0;
@@ -71,7 +129,7 @@ a{
 .two, .three {
 	-webkit-flex: 1 1 0;
             flex: 1 1 0;
-}
+    }
 }
 
 @media all and (max-width: 1080px) and (min-width: 720px) {
@@ -82,18 +140,13 @@ a{
     -webkit-flex-flow: row wrap;
             flex-flow: row wrap;
 }
-    
-.nav {
-    -webkit-flex: 12 1 auto;
-            flex: 12 1 auto;
-}
 .main{
-	-webkit-flex: 1 2 auto;
-            flex: 1 2 auto;
+	-webkit-flex: 2 1 0;
+            flex: 2 1 0;
 }
 .two, .three {
-	-webkit-flex: 1 2 0;
-            flex: 1 2 0;
+	-webkit-flex: 1 1 0;
+            flex: 1 1 0;
     }
 }
 
@@ -104,11 +157,6 @@ a{
     display:         flex;
     -webkit-flex-flow: row wrap;
             flex-flow: row wrap;
-}
-    
-.nav {
-    -webkit-flex: 2 1 0;
-            flex: 2 1 0;
 }
 .main{
 	-webkit-flex: 2 1 auto;
@@ -128,12 +176,6 @@ a{
     -webkit-flex-flow: column;
             flex-flow: column;
 }
-    
-.navbar li{
-    -webkit-flex: 1 1 auto%;
-            flex: 1 1 auto;
-}    
-
 .main{
 	-webkit-flex: 2 1 auto;
             flex: 2 1 auto;
@@ -144,59 +186,8 @@ a{
     }
 }
 
-
 /***********************************
-					Masthead
-***********************************/
-
-.masthead h1{
-    display: block;
-	padding: 30px 20px;
-}
-
-/***********************************
-					Navigation
-***********************************/
-
-.navbar li{
-    float: left;
-    width: 100%;  /* 960/4 = 240  works if the layout is 960*/
-	list-style: none;
-}
-.navbar a{
-	display: block;	
-	padding: 8px 16px;
-	text-align: center;
-	text-decoration: none;
-	color: #bcd6e8;
-	background-color: #466f8a;
-}
-.navbar a:visited,
-.navbar a:hover,
-.navbar a:active,
-.navbar a:focus{
-	color: #fff;
-	background-color: #343b40;
-}
-
-
-/***********************************
-					Content
-***********************************/
-
-.main{
-	
-}
-.two{
-	
-}
-.three{
-	
-}
-
-
-/***********************************
-					Footer
+				Footer
 ***********************************/
 
 .footer p{
